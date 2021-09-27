@@ -4,24 +4,31 @@
     <meta charset= "UTF-8">
     <meta name="viewport" content= "width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>Hora do dia</title>
-    <link rel="stylesheet" href="estilo.css">        
+    <title>verificador de idade</title>
+    <link rel="stylesheet" href="estilo2.css">        
 </head>
 
 <body onload = "imagens()">
 
     <header>
-        <h1>Hora do dia</h1>
+        <h1>verificador de idade</h1>
     </header>
 
     <section>
 
-        <div id="msg">
-            teste mil grau
+        <div>
+            <p>ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
         </div>
 
-        <div id="foto">
-            <img id="imagem" src="fotomanha.png" alt="foto do dia">
+        <div id="res">
         </div>
 
     </section>
