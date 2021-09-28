@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilo copy.css">        
 </head>
 
-<body onload = "imagens()">
+<body>
 
     <header>
         <h1>verificador de idade</h1>
@@ -19,13 +19,13 @@
         <div>
             <p>
                 Ano de nascimento:
-                    <input type="number" name="txtano" id="txtano">
+                    <input type="number" name="txtano" id="txtano" min="0">
             </p>
             <p>
                 Sexo:
-                    <input type="radio" name="checksex" id="masc" checked>
-                    <label for="masc">Masculino</label>
-                    <input type="radio" name="checksex" id="fem">
+                    <input type="radio" name="radsex" id="mas" checked>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
                     <label for="fem">Feminino</label>
             </p>
             <p>
@@ -33,7 +33,7 @@
             </p>
         </div>
 
-        <div id="resultado">
+        <div id="res">
             Preencha os dados acima para ver o resultado!
         </div>
 
