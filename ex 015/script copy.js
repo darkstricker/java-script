@@ -35,12 +35,16 @@ function verificar() {
 
             if (idade >= 0 && idade < 10) {
                 //criança
+                img.setAttribute('src', 'anene.png')
             } else if (idade < 21) {
                 //jovem
+                img.setAttribute('src', 'jovemmuie.png')
             } else if (idade < 50) {
                 //adulta
+                img.setAttribute('src', 'muie.png')
             } else {
                 //idosa
+                img.setAttribute('src', 'vea.png')
             }
         }
         res.style.textAlign = 'center'
